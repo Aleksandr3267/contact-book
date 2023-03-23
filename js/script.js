@@ -53,9 +53,9 @@ async function getUsers() {
     let listCont = document.querySelectorAll('.list-contact');
     let input = document.querySelector('.search');
     function search(a, b) {
-        var value = b.value.toLowerCase();
-        for (var i = 0; i < a.length; i++) {
-            var name = a[i].textContent.toLowerCase();
+        let value = b.value.toLowerCase();
+        for (let i = 0; i < a.length; i++) {
+            let name = a[i].textContent.toLowerCase();
             if (name.includes(value)) {
                 a[i].style.display = "";
             } else {
@@ -67,13 +67,13 @@ async function getUsers() {
         search(listCont, input);
     });
     /* ---------------------------------- sort ---------------------------------- */
-    var select = document.getElementById("contact-select-sort");
+    let select = document.getElementById("contact-select-sort");
     select.addEventListener("change", function () {
-        var value = select.value;
+        let value = select.value;
         sortContacts(value);
     });
     function sortContacts(value) {
-        var contacts = [...document.querySelectorAll(".list-contact")];
+        let contacts = [...document.querySelectorAll(".list-contact")];
         contacts.sort(function (a, b) {
             if (value === "asc") {
                 return a.textContent.localeCompare(b.textContent);
