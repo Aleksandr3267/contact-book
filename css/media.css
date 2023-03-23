@@ -1,0 +1,20 @@
+@media(max-width:600px) {
+    .main-title{
+        font-size: 2.5rem;
+    }
+    .search{
+        font-size: 1.6rem;
+    }
+    .text-contact{
+        font-size: 1.6rem;
+        width: 60%;
+    }
+    .but-contact{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:400px) {
+    .text-contact{
+        width: 50%;
+    }
+}
